@@ -31,4 +31,4 @@ func main() {
 	fmt.Println(my, My)
 }
 
-//go build -o (其他文件) test.exe  day01/assign.go
+//go build -o (其他文件) test.exe  2021-05-25/assign.go
