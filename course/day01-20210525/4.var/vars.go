@@ -32,7 +32,7 @@ func main() {
 		fmt.Println("===", packageVar, funcVar, blockVar)
 		{
 			// 子块级别
-			var innerBlockVar string = "inner bloack var"
+			var innerBlockVar string = "inner bloack 4.var"
 			fmt.Println(packageVar, funcVar, blockVar, innerBlockVar)
 		}
 	}

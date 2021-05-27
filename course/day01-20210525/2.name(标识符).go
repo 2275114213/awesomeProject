@@ -23,7 +23,7 @@ func main() {
 			空白标识符： _
 			关键字：
 				声明：import package
-				实体声明和定义：chan，const，func，interface，map，struct，type，var，
+				实体声明和定义：chan，const，func，interface，map，struct，type，4.var，
 				流程控制：break，continue，case，default，defer，else，fallthrough，for，go,goto,if，range，return，select，switch
 	*/
 	var my = "my"
@@ -31,4 +31,4 @@ func main() {
 	fmt.Println(my, My)
 }
 
-//go build -o (其他文件) test.exe  2021-05-25/assign.go
+//go build -o (其他文件) test.exe  day01-20210525/4.assign(赋值).go

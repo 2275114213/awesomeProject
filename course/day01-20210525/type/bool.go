@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	//var isGirl bool
+	//4.var isGirl bool
 	isGirl := true
 	fmt.Printf("%T,%#v\n", isGirl, isGirl)
 

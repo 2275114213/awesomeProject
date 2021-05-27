@@ -11,7 +11,7 @@ func main() {
 	{
 		name = "change name inner block" // 更改变量的值，不是定义变量
 		fmt.Println(name)
-		//var name = "change name inner block"  赋值
+		//4.var name = "change name inner block"  赋值
 	}
 	fmt.Println(name)
 }
