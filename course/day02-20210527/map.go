@@ -6,12 +6,14 @@ func main() {
 	// map 映射 key-value 的数据结构
 	// 无序的数据结构
 	// 类型 ：map[KeyType]valueType
-	var scores map[string]float64
+	var scores map[string]float64  //nil
 	fmt.Printf("%T,%v\n", scores, scores)
 
 	// 初始化
 	// 字面量
 	scores = map[string]float64{} // 空的map
+	fmt.Printf("%T,%#v\n", scores, scores)
+
 	scores = map[string]float64{"22": 89, "23": 90}
 	fmt.Printf("%T,%#v\n", scores, scores)
 
