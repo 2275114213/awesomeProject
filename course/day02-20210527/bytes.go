@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 )
-
 func main() {
 	fmt.Println(bytes.Compare([]byte("dsdsd"), []byte("sdsd")))
+	fmt.Printf("%T", []byte("sdsd"))
 }

@@ -26,7 +26,7 @@ func newTask(title, start_time, statusCode, people string) map[string]string {
 	task[status] = "未执行"
 	return task
 }
-func main() {
+func add() {
 	var title string
 	var start_time string
 	var status_code string

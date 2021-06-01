@@ -10,13 +10,13 @@ func main() {
 	// 初始化
 	// 字面量
 	names = []string{}                   // 空切片，已经初始化，但元素为0
-	fmt.Printf("%T,%#v\n", names, names) // nil
+	fmt.Printf("%T,%#v\n", names, names)
 	names = []string{"name1", "name2"}
-	fmt.Printf("%T,%#v\n", names, names) // nil
+	fmt.Printf("%T,%#v\n", names, names)
 
 	//  索引
 	names = []string{1: "sd", 2: "sd", 100: "sds"}
-	fmt.Printf("%T,%#v,%v\n", names, names, len(names)) // nil
+	fmt.Printf("%T,%#v,%v\n", names, names, len(names))
 
 	// make 参数
 

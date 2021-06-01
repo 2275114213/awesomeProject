@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 )
 
 // 做一个命令行的任务管理器
@@ -42,14 +43,14 @@ func input(promt string) string {
 
 func main() {
 	method := map[string]func(){
-		"add":   add,
+		"add":   todolist.add,
 		"query": query,
 	}
 	for {
 		text := input("请输入你的查询信息")
 		if text == "add" {
 			method, ok = method["add"]
-			if method, ok = method["add"];ok {
+			if method, ok = method["add"]; ok {
 				method()
 			}
 		} else if text == "query" {
