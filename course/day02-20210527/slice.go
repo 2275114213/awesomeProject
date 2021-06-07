@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+func name1(name map[string]string) {
+	name["ads"] = "sdsd"
+}
+
 // 切片：长度可变 相同类型的一组值的序列
 // 类型：[]type
 func main() {
@@ -9,7 +13,7 @@ func main() {
 	fmt.Printf("%T,%#v\n", names, names) // nil
 	// 初始化
 	// 字面量
-	names = []string{}                   // 空切片，已经初始化，但元素为0
+	names = []string{} // 空切片，已经初始化，但元素为0
 	fmt.Printf("%T,%#v\n", names, names)
 	names = []string{"name1", "name2"}
 	fmt.Printf("%T,%#v\n", names, names)
@@ -62,7 +66,8 @@ func main() {
 	nums := []int{1, 2, 34} //len=3 cap=3
 	numChild := nums[1:2]   // start <= end<=cap   new_cap = cap-start
 	fmt.Println(numChild)
-
-
-
+	test_name := make(map[string]string)
+	test_name["name"] = "sdsd"
+	name1(test_name)
+	fmt.Println(test_name)
 }

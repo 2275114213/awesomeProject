@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 /*
 defer是在return之前执行的。这个在 官方文档中是明确说明了的。要使用defer时不踩坑，
@@ -36,9 +38,20 @@ func testDefer() (rt string) {
 	fmt.Println("main")
 	return rt
 }
+
+func test18(n1, n2 int) {
+	defer func() {
+		// 函数体内不管发生错误都会执行
+		fmt.Println("测试")
+	}()
+	fmt.Println("before")
+	fmt.Println(n1 / n2)
+	fmt.Println("after")
+}
 func main() {
 	// 延迟函数执行, 在函数退出之前执行,多个defer 堆栈执行
 	res := testDefer()
 	fmt.Println(res)
 	fmt.Println(f())
+	test18(1, 0)
 }

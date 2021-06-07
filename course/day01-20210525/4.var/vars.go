@@ -39,4 +39,28 @@ func main() {
 	// 其他代码
 	fmt.Println(msg)
 	// 其他代码
+	var age int
+	fmt.Println(age)
+	var haha string
+	fmt.Printf("%#v\n", haha)
+	var test1 [2]string
+	fmt.Println(test1)
+
+	var test2 []string
+	fmt.Println(test2 == nil)
+	var test3 map[string]string
+	fmt.Println(test3 == nil)
+	test2 = make([]string, 2)
+	test2[0] = "dsfdfd"
+
+	myMap := make(map[string]string) //myMap2 map[string]string{}
+	fmt.Println(myMap)
+	var myMap2 map[string]string
+	fmt.Println(myMap2 == nil)
+
+	var myMap3 map[string]string = map[string]string{"1": "L"}
+	fmt.Println(myMap3)
+	for key, value := range myMap3 {
+		println(key, value)
+	}
 }
